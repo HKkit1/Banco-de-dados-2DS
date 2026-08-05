@@ -32,3 +32,13 @@ INSERT INTO Compras (CompraID, ClienteID, NomeLivro) VALUES
 -- Limpar a tela novamente e digitar:
 SELECT * FROM Clientes;
 SELECT * FROM Compras;
+-- Consulta com INNER JOIN
+SELECT 
+    Clientes.nomeCliente,
+    Compras.NomeLivro
+FROM 
+    Compras
+INNER JOIN 
+    Clientes
+ON 
+    Compras.ClienteID = Clientes.ID;
